@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="536.0" prefWidth="305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseproject.Controllers.SnacksController">
+   <children>
+      <Button fx:id="thymeFingersButton" layoutX="107.0" layoutY="116.0" mnemonicParsing="false" onAction="#thymeFingersAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Thyme Fingers" />
+      <Button fx:id="brazicButton" layoutX="8.0" layoutY="116.0" mnemonicParsing="false" onAction="#brazicAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Brazic" />
+      <Button fx:id="aniseFingersButton" layoutX="206.0" layoutY="116.0" mnemonicParsing="false" onAction="#aniseFingersAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Anise Fingers" />
+      <Button fx:id="qarshalaButton" layoutX="107.0" layoutY="186.0" mnemonicParsing="false" onAction="#qarshalaAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Qarshala" />
+      <Button fx:id="coffeeBiscuitsButton" layoutX="8.0" layoutY="186.0" mnemonicParsing="false" onAction="#coffeeBiscuitsAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Coffee Biscuits" />
+      <Button fx:id="backButton" layoutX="8.0" layoutY="54.0" mnemonicParsing="false" onAction="#backAction" prefHeight="42.0" prefWidth="90.0" style="-fx-background-color: black;" styleClass="primary-button" stylesheets="@style.css" text="Back" />
+   </children>
+</AnchorPane>

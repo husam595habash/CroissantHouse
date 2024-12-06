@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="536.0" prefWidth="305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseproject.Controllers.SweetTreatsController">
+   <children>
+      <Button fx:id="brownieButton" layoutX="107.0" layoutY="116.0" mnemonicParsing="false" onAction="#brownieAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Brownie" />
+      <Button fx:id="donutButton" layoutX="8.0" layoutY="116.0" mnemonicParsing="false" onAction="#donutAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Donut" />
+      <Button fx:id="englishCakeButton" layoutX="206.0" layoutY="116.0" mnemonicParsing="false" onAction="#englishCakeAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="English Cake" />
+      <Button fx:id="cheeseCakeButton" layoutX="107.0" layoutY="186.0" mnemonicParsing="false" onAction="#cheeseCakeAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Cheese Cake" />
+      <Button fx:id="cookieButton" layoutX="8.0" layoutY="186.0" mnemonicParsing="false" onAction="#cookieAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Cookie" />
+      <Button fx:id="trillicaCakeButton" layoutX="206.0" layoutY="186.0" mnemonicParsing="false" onAction="#trillicaCakeAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Trillica Cake" />
+      <Button fx:id="muffinButton" layoutX="8.0" layoutY="257.0" mnemonicParsing="false" onAction="#muffinAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Muffin" />
+      <Button fx:id="backButton" layoutX="8.0" layoutY="54.0" mnemonicParsing="false" onAction="#backAction" prefHeight="42.0" prefWidth="90.0" style="-fx-background-color: black;" styleClass="primary-button" stylesheets="@style.css" text="Back" />
+   </children>
+</AnchorPane>

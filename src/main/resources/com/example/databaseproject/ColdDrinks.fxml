@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="536.0" prefWidth="305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseproject.Controllers.ColdDrinksController">
+   <children>
+      <Button fx:id="lemonButton" layoutX="107.0" layoutY="116.0" mnemonicParsing="false" onAction="#lemonAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Lemon" />
+      <Button fx:id="orangeButton" layoutX="8.0" layoutY="116.0" mnemonicParsing="false" onAction="#orangeAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Orange" />
+      <Button fx:id="mojitoButton" layoutX="206.0" layoutY="116.0" mnemonicParsing="false" onAction="#mojitoAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Mojito" />
+      <Button fx:id="iceChocolateButton" layoutX="107.0" layoutY="186.0" mnemonicParsing="false" onAction="#iceChocolateAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Chocolate" />
+      <Button fx:id="iceVanillaButton" layoutX="8.0" layoutY="186.0" mnemonicParsing="false" onAction="#iceVanillaAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Vanilla" />
+      <Button fx:id="iceCaramelButton" layoutX="206.0" layoutY="186.0" mnemonicParsing="false" onAction="#iceCaramelAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Caramel" />
+      <Button fx:id="iceCoffeeButton" layoutX="8.0" layoutY="257.0" mnemonicParsing="false" onAction="#iceCoffeeAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Coffee" />
+      <Button fx:id="iceLatteButton" layoutX="108.0" layoutY="257.0" mnemonicParsing="false" onAction="#iceLatteAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Latte" />
+      <Button fx:id="iceMochaButton" layoutX="206.0" layoutY="257.0" mnemonicParsing="false" onAction="#iceMochaAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Mocha" />
+      <Button fx:id="iceAmericanoButton" layoutX="8.0" layoutY="319.0" mnemonicParsing="false" onAction="#iceAmericanoAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Americano" />
+      <Button fx:id="spanishLatteButton" layoutX="108.0" layoutY="319.0" mnemonicParsing="false" onAction="#spanishLatteAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Spanish Latte" />
+      <Button fx:id="iceTeaButton" layoutX="206.0" layoutY="319.0" mnemonicParsing="false" onAction="#iceTeaAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Ice Tea" />
+      <Button fx:id="backButton" layoutX="8.0" layoutY="54.0" mnemonicParsing="false" onAction="#backAction" prefHeight="42.0" prefWidth="90.0" style="-fx-background-color: black;" styleClass="primary-button" stylesheets="@style.css" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="BorderPane" prefHeight="644.0" prefWidth="1162.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseproject.Controllers.CashTableController">
+   <left>
+      <AnchorPane fx:id="MenuPane" prefHeight="536.0" prefWidth="305.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="coldDrinksButton" layoutX="107.0" layoutY="54.0" mnemonicParsing="false" onAction="#coldDrinksAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Cold Drinks" />
+            <Button fx:id="hotDrinksButton" layoutX="8.0" layoutY="54.0" mnemonicParsing="false" onAction="#hotDrinksAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Hot Drinks" />
+            <Button fx:id="snacksButton" layoutX="206.0" layoutY="54.0" mnemonicParsing="false" onAction="#snacksAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Snacks" />
+            <Button fx:id="sweetTreatsButton" layoutX="107.0" layoutY="124.0" mnemonicParsing="false" onAction="#sweetTreatsAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Sweet treats" />
+            <Button fx:id="cakeButton" layoutX="8.0" layoutY="124.0" mnemonicParsing="false" onAction="#cakeAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Cake" />
+            <Button fx:id="frozenBoxesButton" layoutX="206.0" layoutY="124.0" mnemonicParsing="false" onAction="#frozenBoxesAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Frozen Boxes" />
+            <Label layoutX="10.0" layoutY="290.0" style="-fx-font-weight: bold; -fx-font-size: 12;" text="Customer number :" />
+            <TextField layoutX="127.0" layoutY="285.0" prefWidth="161.0" styleClass="text-field-Primary" stylesheets="@style.css">
+               <padding>
+                  <Insets bottom="3.0" left="15.0" top="3.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="softDrinksButton" layoutX="8.0" layoutY="195.0" mnemonicParsing="false" onAction="#softDrinksAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Soft Drinks" />
+            <Button fx:id="croissantButton" layoutX="108.0" layoutY="195.0" mnemonicParsing="false" onAction="#croissantAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Croissants" />
+         </children>
+      </AnchorPane>
+   </left>
+   <top>
+      <AnchorPane prefHeight="89.0" prefWidth="1196.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="AddCustomerButton" layoutX="336.0" layoutY="29.0" mnemonicParsing="false" onAction="#AddCustomerAction" prefHeight="30.0" prefWidth="197.0" styleClass="secondary-button" stylesheets="@style.css" text="Add Customer" />
+            <Button fx:id="orderHistoryButton" layoutX="531.0" layoutY="29.0" mnemonicParsing="false" onAction="#orderHistoryAction" prefHeight="51.0" prefWidth="320.0" styleClass="secondary-button" stylesheets="@style.css" text="Customer's Order History" />
+            <ImageView fitHeight="97.0" fitWidth="119.0" layoutX="11.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@croissant house logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="cashSystemButton" layoutX="153.0" layoutY="27.0" mnemonicParsing="false" onAction="#cashSystemAction" prefHeight="30.0" prefWidth="197.0" styleClass="secondary-button" stylesheets="@style.css" text="Cash System" />
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="513.0" prefWidth="856.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <TableView layoutX="34.0" layoutY="17.0" prefHeight="402.0" prefWidth="542.0" stylesheets="@style.css">
+               <columns>
+                  <TableColumn prefWidth="110.933349609375" text="Item Name" />
+                  <TableColumn prefWidth="122.66668701171875" text="Item Category" />
+                  <TableColumn prefWidth="121.86663818359375" text="Price Per Unit" />
+                  <TableColumn minWidth="9.33343505859375" prefWidth="72.53323364257812" text="Quantity" />
+                  <TableColumn prefWidth="107.19997558593752" text="Total Price" />
+               </columns>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </TableView>
+            <Label fx:id="handledByLabel" layoutX="590.0" layoutY="56.0" prefHeight="27.0" prefWidth="115.0" text="Handled by :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalOrderAmountLabel" layoutX="590.0" layoutY="136.0" prefHeight="27.0" prefWidth="162.0" text="Total Order Amount :">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="orderIdLabel" layoutX="590.0" layoutY="98.0" prefHeight="27.0" prefWidth="115.0" text="Order ID :">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteOnePieceButton" layoutX="54.0" layoutY="465.0" mnemonicParsing="false" onAction="#deleteOnePieceAction" prefHeight="42.0" prefWidth="90.0" style="-fx-pref-height: 30; -fx-pref-width: 100;" styleClass="primary-button" stylesheets="@style.css" text="Delete one piece" />
+            <Button fx:id="deleteAllButton" layoutX="169.0" layoutY="465.0" mnemonicParsing="false" onAction="#deleteAllAction" prefHeight="42.0" prefWidth="90.0" style="-fx-pref-height: 30;" styleClass="primary-button" stylesheets="@style.css" text="Delete All" />
+            <ImageView fx:id="exitButton" fitHeight="53.0" fitWidth="68.0" layoutX="792.0" layoutY="487.0" onMouseClicked="#exitAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@exit.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="nameOfEmployee" layoutX="691.0" layoutY="58.0" prefHeight="27.0" prefWidth="115.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="numberOfOrder" layoutX="673.0" layoutY="100.0" prefHeight="27.0" prefWidth="115.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="NumberOfTotal" layoutX="765.0" layoutY="137.0" prefHeight="27.0" prefWidth="47.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </AnchorPane>
+   </right>
+</BorderPane>

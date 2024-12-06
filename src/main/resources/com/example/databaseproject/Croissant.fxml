@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="165.0" prefWidth="343.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseproject.Controllers.CroissantController">
+   <children>
+      <Label layoutX="24.0" layoutY="38.0" style="-fx-font-weight: bold; -fx-font-size: 14;" text="Enter the amount :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="amountField" layoutX="158.0" layoutY="33.0" prefWidth="161.0" style="-fx-background-radius: 15; -fx-background-color: white; -fx-text-fill: black; -fx-font-size: 15; -fx-border-color: #e60000; -fx-border-radius: 15;">
+         <padding>
+            <Insets bottom="3.0" left="15.0" top="3.0" />
+         </padding>
+      </TextField>
+      <Button fx:id="cancelButton" layoutX="183.0" layoutY="108.0" mnemonicParsing="false" onAction="#cancelAction" prefHeight="30.0" prefWidth="162.0" styleClass="primary-button" stylesheets="@style.css" text="Cancel" />
+      <Button fx:id="enterButton" layoutX="87.0" layoutY="108.0" mnemonicParsing="false" onAction="#enterAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Enter" />
+   </children>
+</AnchorPane>

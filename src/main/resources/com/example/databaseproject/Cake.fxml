@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="536.0" prefWidth="305.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseproject.Controllers.CakeController">
+   <children>
+      <Button fx:id="smallButton" layoutX="113.0" layoutY="116.0" mnemonicParsing="false" onAction="#smallCackeAction" prefHeight="42.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Small Cake" />
+      <Button fx:id="largeButton" layoutX="14.0" layoutY="116.0" mnemonicParsing="false" onAction="#largeCackeAction" prefHeight="40.0" prefWidth="90.0" styleClass="primary-button" stylesheets="@style.css" text="Large Cake" />
+      <Button fx:id="backButton" layoutX="14.0" layoutY="54.0" mnemonicParsing="false" onAction="#backAction" prefHeight="42.0" prefWidth="90.0" style="-fx-background-color: black;" styleClass="primary-button" stylesheets="@style.css" text="Back" />
+   </children>
+</AnchorPane>
